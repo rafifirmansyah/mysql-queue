@@ -39,7 +39,7 @@ BEGIN
 /* popJob - A procedure to request the next 'new' job */
 	UPDATE job SET 
 		clientId = VclientId,
-		status = 'processing',
+		status = 'processing'
         	WHERE status = 'new'
         	ORDER BY idJob ASC LIMIT 1;
 
